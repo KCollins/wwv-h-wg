@@ -1,0 +1,69 @@
+{
+  "fname1": "w2naf.com_2021-11-15T19_07_36Z_10000.00_iq.wav",
+  "fs_custom": -1,
+  "modulation": true,
+  "original sample rate": 20250,
+  "upsampled sample rate": 48000,
+  "latitude": 0,
+  "longitude": 0,
+  "results": [
+    {
+      "name": "t1",
+      "description": "Start time of the first white Gaussian noise with respect to the beginning of the recording: {:f} seconds",
+      "value": 33.63589583333333,
+      "unit": "seconds"
+    },
+    {
+      "name": "t_chirps_wrt_t1",
+      "description": "Start Time of the Chirps with respect to Start Time of the First Noise: {:f} seconds",
+      "value": 14.001604166666667,
+      "unit": "seconds"
+    },
+    {
+      "name": "t2",
+      "description": "Start time of the second white Gaussian noise with respect to the first white Gaussian noise: {:f} seconds.",
+      "value": 27.002104166666665,
+      "unit": "seconds"
+    },
+    {
+      "name": "multipath",
+      "description": "user saw multipath? {}",
+      "value": false,
+      "unit": "yes/no"
+    },
+    {
+      "name": "number_of_paths",
+      "description": "The user was able to identify {} paths",
+      "value": 1,
+      "unit": "count"
+    },
+    {
+      "name": "R_peaks",
+      "description": "Array of amplitudes of peaks: {}",
+      "value": [
+        4611.210062072141,
+        11438.107446553937,
+        2859.8128245333287,
+        21381.462351542774,
+        3539.2391612165984,
+        17319.56155770665,
+        10582.744788379554
+      ],
+      "unit": "unitless (cross-correlation)"
+    },
+    {
+      "name": "t_peaks",
+      "description": "Array of times of peaks: {}",
+      "value": [
+        45.43745833333333,
+        46.537479166666664,
+        46.737375,
+        47.637499999999996,
+        47.837375,
+        48.7375,
+        49.83752083333333
+      ],
+      "unit": "seconds"
+    }
+  ]
+}
