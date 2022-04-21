@@ -49,11 +49,12 @@ def plot_signal(time_vec,x_0,xlim=None,title=None):
 
     for i in range(len(x_1)):
       # the random value must be greater than zero!
-      r = 1.0 - random.random() 
       v = x_1[i]
       if (v < 0) and (v > -minval):
+        r = 1.0 - random.random() 
         x_1[i] = -minval * r
       elif (v >= 0) and (v < minval):
+        r = 1.0 - random.random() 
         x_1[i] = minval * r
     
     fig = plt.figure(figsize=(15,12))
