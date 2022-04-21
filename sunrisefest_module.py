@@ -125,6 +125,11 @@ formats = [
         "name": "W2NAF",
         "human": "CALLSIGN_YYYY-MM-DDTHH_MM_SSZ_FREQUENCY_iq.wav",
         "re": r"(?P<callsign>[^_\n]+)_(?P<timestamp>\d{4}-\d{2}-\d{2}T\d{2}_\d{2}_\d{2}Z)_(?P<band>[\d.]+)_(?P<type>am|iq).wav"
+    },
+    {
+        "name": 'jj1bdx',
+        "human": "CALLSIGN_STATION_BAND_YYYY-MM-DD_HH-MM.wav",
+        "re": r"(?P<callsign>[^_]+)_(?P<station>[^_]+)_(?P<band>[^_]+)_(?P<timestamp>\d{4}-\d{2}-\d{2}_\d{2}-\d{2}).wav"
     }
 ]
 
