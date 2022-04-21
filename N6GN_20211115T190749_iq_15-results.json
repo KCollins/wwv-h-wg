@@ -1,0 +1,71 @@
+{
+  "Input filename": "N6GN_20211115T190749_iq_15.wav",
+  "parsed info": {
+    "callsign": "N6GN",
+    "timestamp": "20211115T190749",
+    "type": "iq",
+    "band": "15"
+  },
+  "fs_custom": -1,
+  "modulation": true,
+  "original sample rate": 20249,
+  "upsampled sample rate": 48000,
+  "latitude": 41.5,
+  "longitude": -81.61,
+  "results": [
+    {
+      "name": "t1",
+      "description": "Start time of the first white Gaussian noise with respect to the beginning of the recording: {:f} seconds",
+      "value": 20.307375,
+      "unit": "seconds"
+    },
+    {
+      "name": "t_chirps_wrt_t1",
+      "description": "Start Time of the Chirps with respect to Start Time of the First Noise: {:f} seconds",
+      "value": 14.000083333333329,
+      "unit": "seconds"
+    },
+    {
+      "name": "t2",
+      "description": "Start time of the second white Gaussian noise with respect to the first white Gaussian noise: {:f} seconds.",
+      "value": 27.000145833333328,
+      "unit": "seconds"
+    },
+    {
+      "name": "multipath",
+      "description": "user saw multipath? {}",
+      "value": false,
+      "unit": "yes/no"
+    },
+    {
+      "name": "number_of_paths",
+      "description": "The user was able to identify {} paths",
+      "value": 1,
+      "unit": "count"
+    },
+    {
+      "name": "R_peaks",
+      "description": "Array of amplitudes of peaks: {}",
+      "value": [
+        19849.606828498247,
+        39169.89429954927,
+        61740.40968179832,
+        39252.15115683414,
+        20061.952299670294
+      ],
+      "unit": "unitless (cross-correlation)"
+    },
+    {
+      "name": "t_peaks",
+      "description": "Array of times of peaks: {}",
+      "value": [
+        32.107458333333334,
+        33.207458333333335,
+        34.30745833333333,
+        35.40745833333333,
+        36.50745833333333
+      ],
+      "unit": "seconds"
+    }
+  ]
+}
