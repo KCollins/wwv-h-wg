@@ -32,3 +32,6 @@ which may be easier to type.
 
 See parameters of the notebook:
 `papermill --help-notebook sunrisefest.ipynb`
+
+
+Check out `papermill-example.py` for an example of how you might run against a large list of files.
