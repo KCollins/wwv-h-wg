@@ -14,13 +14,13 @@ Run with the parameters as set in the notebook:
 `papermill sunrisefest.ipynb OUTPUT_PATH`
 
 Run against a different station's recording:
-`papermill sunrisefest.ipynb OUTPUT_PATH -p input_filename 'w2naf.com_2021-11-15T19_07_36Z_10000.00_iq.wav' -p input_requires_modulation True -p lat 12.34 -p lon -12.34 -p radio 'KX3' -p antenna 'tower-mounted beam'`
+`papermill sunrisefest.ipynb OUTPUT_PATH -p input_filename 'w2naf.com_2021-11-15T19_07_36Z_10000.00_iq.wav' -p input_requires_demodulation True -p lat 12.34 -p lon -12.34 -p radio 'KX3' -p antenna 'tower-mounted beam'`
 
 or provide a YAML string:
 ```
 papermill sunrisefest.ipynb OUTPUT_PATH -y "
 input_filename: w2naf.com_2021-11-15T19_07_36Z_10000.00_iq.wav
-input_requires_modulation: True
+input_requires_demodulation: True
 lat: 12.34
 lon: -12.34
 radio: KX3
