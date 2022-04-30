@@ -7,7 +7,7 @@ import plotly.graph_objects as go
 import scipy.signal
 from IPython.display import Audio, display
 import re
-
+import random
 
 def play(x, fs, autoplay=False):
     ''' Output an audio player that allows participants to listen to their wav files '''
@@ -39,10 +39,25 @@ def crosscorrelate(signal, template, fs):
     return Rxy, t
 
 def plot_signal(time_vec,x_0,xlim=None,title=None):
-    ''' Plot the signal in the time doman'''
+    ''' Plot the signal in the time domain'''
+
+    # This code add the very low level of white noise to the input
+    # so that the specgram will continue display on zero input values
+
+    minval = 1e-16
+    x_1 = x_0
+
+    for i in range(len(x_1)):
+      # the random value must be greater than zero!
+      v = x_1[i]
+      if (v < 0) and (v > -minval):
+        r = 1.0 - random.random() 
+        x_1[i] = -minval * r
+      elif (v >= 0) and (v < minval):
+        r = 1.0 - random.random() 
+        x_1[i] = minval * r
     
     fig = plt.figure(figsize=(15,12))
-
     ax = fig.add_subplot(2,1,1)
     ax.plot(time_vec,x_0)
     ax.set_xticklabels([])
@@ -52,7 +67,8 @@ def plot_signal(time_vec,x_0,xlim=None,title=None):
 
     ax = fig.add_subplot(2,1,2)
     samplerate = 1./(time_vec[1]-time_vec[0])
-    ax.specgram(x_0,Fs=samplerate)
+    # display the noise-added spectrum data instead of the given data
+    ax.specgram(x_1,Fs=samplerate)
     ax.set_xlabel('Time [s]')
     ax.set_ylabel('Hz')
     ax.set_xlim(xlim)
