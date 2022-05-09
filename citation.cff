@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Collins"
+  given-names: "Kristina"
+  orcid: "https://orcid.org/0000-0002-3816-1948"
+- family-names: "Cuong"
+  given-names: "Nguyen"
+  orcid: "https://orcid.org/0000-0002-3769-7556"
+- family-names: "Montare"
+  given-names: "Aidan"
+  orcid: "https://orcid.org/0000-0002-3682-9334"
+title: "WWV/H Working Group Software"
+version: 1.0.0
+doi: 
+date-released: 2022-05-08
+url: "https://github.com/KCollins/wwv-h-wg"
